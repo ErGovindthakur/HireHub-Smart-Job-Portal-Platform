@@ -38,7 +38,7 @@ export const register = async (req, res) => {
 
     await User.create({
       fullname,
-      normalizedEmail,
+      email:normalizedEmail,
       phoneNumber,
       password: hashedPassword,
       role,
