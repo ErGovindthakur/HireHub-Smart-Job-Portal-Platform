@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import Navbar from './shared/Navbar'
+import  { useEffect } from 'react'
 import Job from './Job';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSearchedQuery } from '@/redux/jobSlice';
@@ -18,9 +17,9 @@ const Browse = () => {
     },[])
     return (
         <div>
-            <div className='max-w-7xl mx-auto my-10'>
+            <div className='max-w-7xl container mx-auto mt-20'>
                 <h1 className='font-bold text-xl my-10'>Search Results ({allJobs.length})</h1>
-                <div className='grid grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
                     {
                         allJobs.map((job) => {
                             return (

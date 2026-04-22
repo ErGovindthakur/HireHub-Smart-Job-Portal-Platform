@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "../shared/Navbar";
+import { useEffect, useState } from "react";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { RadioGroup } from "../ui/radio-group";
@@ -54,11 +53,11 @@ const Login = () => {
     }
   }, [user]);
   return (
-    <div>
-      <div className="flex items-center justify-center max-w-7xl mx-auto">
+    <div className="w-full">
+      <div className="flex items-center justify-center mx-auto mt-20">
         <form
           onSubmit={submitHandler}
-          className="w-1/2 border border-gray-200 rounded-md p-4 my-10"
+          className="md:w-1/2 border border-gray-200 rounded-md p-4 my-10"
         >
           <h1 className="font-bold text-xl mb-5">Login</h1>
           <div className="my-2">
