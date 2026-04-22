@@ -1,4 +1,3 @@
-import React from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './ui/carousel';
 import { Button } from './ui/button';
 import { useDispatch } from 'react-redux';
@@ -23,7 +22,7 @@ const CategoryCarousel = () => {
 
     return (
         <div>
-            <Carousel className="w-full max-w-xl mx-auto my-20">
+            <Carousel className="w-full max-w-xl container mx-auto my-16">
                 <CarouselContent>
                     {
                         category.map((cat, index) => (
